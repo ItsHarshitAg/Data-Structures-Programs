@@ -16,3 +16,6 @@ def binary_search(arr, x):
             return mid
     # If we reach here, then the element was not present
     return -1
+
+print(binary_search([2, 3, 4, 10, 40], 10))
+print(binary_search([2, 3, 4, 10, 40], 2)) 
