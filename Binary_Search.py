@@ -17,5 +17,8 @@ def binary_search(arr, x):
     # If we reach here, then the element was not present
     return -1
 
-print(binary_search([2, 3, 4, 10, 40], 10))
-print(binary_search([2, 3, 4, 10, 40], 2)) 
+bs=binary_search([2, 3, 4, 10, 40], 10)
+if bs!= -1:
+    print("Element is present at index", str(binary_search([2, 3, 4, 10, 40], 10)))
+else :
+    print("Element is not present in array")
