@@ -1,5 +1,5 @@
-#Find the index position of the Last occurance of a target in a sorted array
-def LastOccurance(arr, target):
+#Find the index position of the first occurance of a target in a sorted array
+def firstOccurance(arr, target):
     start = 0
     end = len(arr) - 1
     result = -1
@@ -7,11 +7,12 @@ def LastOccurance(arr, target):
         mid = start + (end - start) // 2
         if arr[mid] == target:
             result = mid
-            start = mid + 1
+            end = mid - 1
         elif arr[mid] < target:
             start = mid + 1
         else:
             end = mid - 1
+            result = mid
     return result
 
-print(LastOccurance([1,1,2,2,3,4,5],2))
+print(firstOccurance([1,1,2,2,3,5],4))
